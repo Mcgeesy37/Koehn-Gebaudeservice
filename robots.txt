@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.koehn-gebaeudeservice.de/sitemap.xml
