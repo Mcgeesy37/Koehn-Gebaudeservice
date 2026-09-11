@@ -449,6 +449,7 @@ button{ font-family:inherit; }
   flex:none;
 }
 .badge{ display:flex; flex-direction:column; align-items:center; gap:2px; }
+.badge svg{ color:var(--navy-700); }
 .badge__label{
   font-family:var(--font-display);
   font-weight:700;
