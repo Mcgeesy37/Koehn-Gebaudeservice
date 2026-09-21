@@ -270,9 +270,28 @@ button{ font-family:inherit; }
   font-size:clamp(2.2rem, 4.4vw, 3.6rem);
   color:#fff;
   line-height:1.05;
-  transform:rotate(-7deg);
   text-align:right;
-  text-shadow:0 2px 18px rgba(0,0,0,0.25);
+  display:block;
+}
+.hero__script-scrim{
+  position:absolute;
+  right:-8%;
+  left:-14%;
+  top:-14%;
+  bottom:-18%;
+  z-index:-1;
+  background:radial-gradient(ellipse at 70% 40%, rgba(6,16,30,0.62) 0%, rgba(6,16,30,0.34) 55%, rgba(6,16,30,0) 78%);
+  border-radius:40%;
+  filter:blur(2px);
+}
+.hero__script-text{
+  position:relative;
+  display:inline-block;
+  transform:rotate(-7deg);
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.35),
+    0 2px 6px rgba(0,0,0,0.5),
+    0 8px 26px rgba(0,0,0,0.55);
 }
 .hero__script svg{
   display:block;
@@ -283,8 +302,9 @@ button{ font-family:inherit; }
 .hero__script svg path{
   fill:none;
   stroke:#fff;
-  stroke-width:2;
+  stroke-width:2.4;
   stroke-linecap:round;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
 @media (max-width:900px){
@@ -424,7 +444,7 @@ button{ font-family:inherit; }
 /* ============ CTA band (Sprechen wir über Ihr Objekt) ============ */
 .cta-band{
   position:relative;
-  background:var(--navy-900) url('assets/glass-band.jpg') right center/cover no-repeat;
+  background:var(--navy-900) url('assets/hero-glass.jpg') right center/cover no-repeat;
   color:#fff;
 }
 .cta-band::before{
@@ -448,19 +468,47 @@ button{ font-family:inherit; }
   border-radius:var(--radius-sm);
   flex:none;
 }
-.badge{ display:flex; flex-direction:column; align-items:center; gap:2px; }
+.badge{ display:flex; flex-direction:column; align-items:center; gap:6px; }
 .badge svg{ color:var(--navy-700); }
 .badge__label{
   font-family:var(--font-display);
   font-weight:700;
-  font-size:0.78rem;
-  letter-spacing:0.03em;
+  font-size:0.72rem;
+  letter-spacing:0.02em;
   color:var(--navy-800);
   text-align:center;
   line-height:1.2;
 }
 .badge__sub{ font-size:0.6rem; color:var(--ink-soft); letter-spacing:0.08em; text-transform:uppercase; }
-.badge-divider{ width:1px; height:34px; background:var(--line-strong); }
+.badge-divider{ width:1px; height:44px; background:var(--line-strong); }
+
+/* Ökologisch-zertifiziert Siegel */
+.badge--eco .badge__seal{ display:block; }
+
+/* VHV Versicherungspartner Wortmarke */
+.badge__vhv{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3px;
+  height:40px;
+  justify-content:center;
+}
+.badge__vhv-mark{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:1.3rem;
+  letter-spacing:0.02em;
+  color:var(--navy-900);
+  line-height:1;
+}
+.badge__vhv-bar{
+  display:block;
+  width:34px;
+  height:4px;
+  border-radius:2px;
+  background:linear-gradient(90deg, #e8720c, #f2a33d);
+}
 
 @media (max-width:760px){
   .cta-band__inner{ padding:44px 0; }
