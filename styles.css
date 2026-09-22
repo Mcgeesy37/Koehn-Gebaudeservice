@@ -280,7 +280,7 @@ button{ font-family:inherit; }
   top:-14%;
   bottom:-18%;
   z-index:-1;
-  background:radial-gradient(ellipse at 70% 40%, rgba(6,16,30,0.62) 0%, rgba(6,16,30,0.34) 55%, rgba(6,16,30,0) 78%);
+  background:radial-gradient(ellipse at 70% 40%, rgba(6,16,30,0.24) 0%, rgba(6,16,30,0.12) 55%, rgba(6,16,30,0) 78%);
   border-radius:40%;
   filter:blur(2px);
 }
@@ -289,9 +289,9 @@ button{ font-family:inherit; }
   display:inline-block;
   transform:rotate(-7deg);
   text-shadow:
-    0 1px 0 rgba(0,0,0,0.35),
-    0 2px 6px rgba(0,0,0,0.5),
-    0 8px 26px rgba(0,0,0,0.55);
+    0 1px 0 rgba(0,0,0,0.45),
+    0 2px 8px rgba(0,0,0,0.6),
+    0 10px 30px rgba(0,0,0,0.5);
 }
 .hero__script svg{
   display:block;
@@ -444,7 +444,7 @@ button{ font-family:inherit; }
 /* ============ CTA band (Sprechen wir über Ihr Objekt) ============ */
 .cta-band{
   position:relative;
-  background:var(--navy-900) url('assets/hero-glass.jpg') right center/cover no-repeat;
+  background:var(--navy-900) url('assets/hero-fenster.jpg') right center/cover no-repeat;
   color:#fff;
 }
 .cta-band::before{
@@ -699,6 +699,10 @@ button{ font-family:inherit; }
   overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
 }
 
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--navy-500);
+  outline-offset:2px;
+}
 a:focus-visible, button:focus-visible{
   outline:2px solid var(--navy-500);
   outline-offset:2px;
