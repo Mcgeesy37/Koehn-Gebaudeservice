@@ -306,7 +306,7 @@ button{ font-family:inherit; }
   filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
-@media (max-width:900px){
+@media (max-width:1180px){
   .hero{ min-height:0; }
   .hero__photo img{ object-position:65% 50%; }
   .hero__photo::after{ background:linear-gradient(180deg, rgba(8,22,39,0.55) 0%, rgba(8,22,39,0.93) 46%, rgba(8,22,39,0.98) 100%); }
