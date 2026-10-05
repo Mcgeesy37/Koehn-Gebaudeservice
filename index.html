@@ -12,7 +12,7 @@
 <link rel="alternate icon" href="assets/favicon.ico">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://www.koehn-gebaeudeservice.de/">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles1.css">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Köhn Gebäudeservice GmbH — Gebäudereinigung in Berlin">
@@ -147,6 +147,13 @@
       <path d="M12 12c3.2 0 5.5-2.3 5.5-6-3.7 0-6 2.3-6 6"></path>
       <path d="M8 21h8l-0.9-5.5a1 1 0 00-1-.8h-4.2a1 1 0 00-1 .8L8 21z"></path>
     </symbol>
+    <symbol id="icon-gutter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10 L12 4 L21 10"></path>
+      <path d="M4 10.5 H20"></path>
+      <path d="M7 14v2.5"></path>
+      <path d="M12 14v3.5"></path>
+      <path d="M17 14v2.5"></path>
+    </symbol>
   </defs>
 </svg>
 
@@ -198,7 +205,7 @@
       <div class="hero__content">
         <p class="eyebrow">Gebäudeservice in Berlin und Umgebung</p>
         <h1>Gründlich.<br>Zuverlässig.<br>Nachhaltig.</h1>
-        <p class="lead">Die Köhn Gebäudeservice GmbH steht für zuverlässigen Service rund um Haus und Grundstück. Mit Leidenschaft und einem Blick fürs Detail sorgen wir für saubere Immobilien und gepflegte Außenanlagen - damit Sie sich rundum wohlfühlen.</p>
+        <p class="lead">Die Köhn Gebäudeservice GmbH steht für zuverlässigen Service rund um Haus und Grundstück mit Leidenschaft und einem Blick fürs Detail sorgen wir für saubere Immobilien und gepflegte Außenanlagen - damit Sie sich rundum wohlfühlen.</p>
 
         <div class="hero__actions">
           <a href="#kontakt" class="btn btn-white">
@@ -289,6 +296,15 @@
           <p>Professionelle Reinigung von Terrassen, Einfahrten und gepflasterten Wegen – auf Wunsch inklusive Nachsanden der Pflasterfugen.</p>
           <div class="service__figure">
             <img src="assets/svc-objekt-sonder.jpg.PNG" alt="Gereinigte Glasfassade eines Gewerbeobjekts" width="140" height="131">
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon"><svg><use href="#icon-gutter"></use></svg></div>
+          <h3>Dachrinnenreinigung</h3>
+          <p>Gründliche Entfernung von Laub, Moos und Ablagerungen aus Dachrinnen – mit moderner Saugtechnik vom Boden aus.</p>
+          <div class="service__figure">
+            <img src="assets/svc-dachrinnenreinigung.jpg" alt="Dachrinnenreinigung mit Saugtechnik vom Boden aus" width="158" height="131">
           </div>
         </article>
       </div>
@@ -515,11 +531,14 @@
             <input type="email" id="email" name="E-Mail" required>
           </div>
           <div class="form-row">
-            <label for="objektart">Objektart</label>
-            <select id="objektart" name="Objektart">
-              <option>Gewerbeobjekt</option>
-              <option>Wohnobjekt / Hausverwaltung</option>
-              <option>Bauend- / Sanierungsreinigung</option>
+            <label for="dienstleistung">Dienstleistung</label>
+            <select id="dienstleistung" name="Dienstleistung">
+              <option>Privat- &amp; Gewerbereinigung</option>
+              <option>Fenster- &amp; Glasreinigung</option>
+              <option>Grund- &amp; Bauendreinigung</option>
+              <option>Garten- &amp; Grünpflege</option>
+              <option>Sonder- &amp; Außenflächenreinigung</option>
+              <option>Dachrinnenreinigung</option>
               <option>Sonstiges</option>
             </select>
           </div>
@@ -543,7 +562,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo-white.svg" alt="Köhn Gebäudeservice GmbH" width="220" height="130" style="height:40px;width:auto;">
-        <p>Gebäudeservice für private, gewerbliche und öffentliche Objekte in Berlin und Umgebung — gründlich, zuverlässig, nachhaltig.</p>
+        <p>Gebäudereinigung für private, gewerbliche und öffentliche Objekte in Berlin und Umgebung — gründlich, zuverlässig, nachhaltig.</p>
       </div>
 
       <div class="footer-col">
