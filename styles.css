@@ -84,7 +84,7 @@ button{ font-family:inherit; }
 .eyebrow{
   font-family:var(--font-display);
   font-size:0.78rem;
-  font-weight:600;
+  font-weight:700;
   letter-spacing:0.14em;
   text-transform:uppercase;
   color:var(--navy-500);
@@ -368,9 +368,10 @@ button{ font-family:inherit; }
 }
 
 /* ============ Leistungen ============ */
-.services{ display:grid; grid-template-columns:repeat(5, 1fr); }
+.services{ display:grid; grid-template-columns:repeat(3, 1fr); gap:36px 0; }
 .service{ padding:0 20px; border-left:1px solid var(--line); text-align:left; }
-.service:first-child{ border-left:none; padding-left:0; }
+.service:nth-child(3n+1){ border-left:none; padding-left:0; }
+.service:nth-child(n+4){ border-top:1px solid var(--line); padding-top:28px; }
 .service__icon{
   width:56px; height:56px; border-radius:50%;
   background:var(--navy-700);
