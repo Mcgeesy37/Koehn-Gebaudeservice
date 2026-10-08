@@ -12,7 +12,7 @@
 <link rel="alternate icon" href="assets/favicon.ico">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://www.koehn-gebaeudeservice.de/">
-<link rel="stylesheet" href="styles1.css">
+<link rel="stylesheet" href="styles.css">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Köhn Gebäudeservice GmbH — Gebäudereinigung in Berlin">
@@ -530,18 +530,18 @@
             <label for="email">E-Mail</label>
             <input type="email" id="email" name="E-Mail" required>
           </div>
-          <div class="form-row">
-            <label for="dienstleistung">Dienstleistung</label>
-            <select id="dienstleistung" name="Dienstleistung">
-              <option>Privat- &amp; Gewerbereinigung</option>
-              <option>Fenster- &amp; Glasreinigung</option>
-              <option>Grund- &amp; Bauendreinigung</option>
-              <option>Garten- &amp; Grünpflege</option>
-              <option>Sonder- &amp; Außenflächenreinigung</option>
-              <option>Dachrinnenreinigung</option>
-              <option>Sonstiges</option>
-            </select>
-          </div>
+          <fieldset class="form-row form-checks">
+            <legend>Dienstleistung <small>(Mehrfachauswahl möglich)</small></legend>
+            <div class="check-grid">
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Privat- & Gewerbereinigung"><span>Privat- &amp; Gewerbereinigung</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Fenster- & Glasreinigung"><span>Fenster- &amp; Glasreinigung</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Grund- & Bauendreinigung"><span>Grund- &amp; Bauendreinigung</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Garten- & Grünpflege"><span>Garten- &amp; Grünpflege</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Sonder- & Außenflächenreinigung"><span>Sonder- &amp; Außenflächenreinigung</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Dachrinnenreinigung"><span>Dachrinnenreinigung</span></label>
+              <label class="check"><input type="checkbox" name="Dienstleistung" value="Sonstiges"><span>Sonstiges</span></label>
+            </div>
+          </fieldset>
           <div class="form-row">
             <label for="nachricht">Nachricht</label>
             <textarea id="nachricht" name="Nachricht" placeholder="Objektgröße, gewünschter Turnus, besondere Anforderungen …" required></textarea>
