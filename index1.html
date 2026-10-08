@@ -48,6 +48,18 @@
   "founder": { "@type": "Person", "name": "Tjard Köhn" }
 }
 </script>
+<style>
+/* Dienstleistung-Kästchen (Mehrfachauswahl) */
+.form-checks{ border:0; padding:0; margin:0 0 18px; min-width:0; }
+.form-checks legend{ padding:0; margin-bottom:8px; font-size:0.85rem; font-weight:600; color:var(--navy-800); }
+.form-checks legend small{ font-weight:400; color:var(--ink-soft); }
+.check-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.form-row .check{ display:flex; flex-direction:row; align-items:center; gap:10px; padding:10px 12px; border:1px solid var(--line-strong); border-radius:8px; background:#fff; cursor:pointer; font-size:0.9rem; font-weight:500; color:var(--ink); transition:border-color 0.2s, background-color 0.2s; }
+.form-row .check:hover{ border-color:var(--navy-500); }
+.form-row .check:has(input:checked){ border-color:var(--navy-700); background:var(--sky-100); }
+.form-row .check input{ appearance:auto; width:18px; height:18px; padding:0; margin:0; flex:none; accent-color:var(--navy-700); cursor:pointer; }
+@media (max-width:560px){ .check-grid{ grid-template-columns:1fr; } }
+</style>
 </head>
 <body>
 
