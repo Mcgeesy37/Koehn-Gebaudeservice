@@ -703,3 +703,67 @@ a:focus-visible, button:focus-visible{
   outline:2px solid var(--navy-500);
   outline-offset:2px;
 }
+
+/* ============================================================
+   Köhn Gebäudeservice GmbH — leistungen.css
+   Zusatz-Styles für die Leistungs-Unterseiten (nach styles.css laden)
+   ============================================================ */
+
+.breadcrumb{ display:flex; flex-wrap:wrap; gap:8px; font-size:0.85rem; margin-bottom:22px; color:rgba(255,255,255,0.7); }
+.breadcrumb a{ color:rgba(255,255,255,0.85); }
+.breadcrumb a:hover{ color:#fff; text-decoration:underline; }
+
+.page-hero{ background:linear-gradient(135deg, var(--navy-900), var(--navy-700)); color:#fff; padding:64px 0 72px; }
+.page-hero__inner > *{ min-width:0; }
+.page-hero__inner{ display:grid; grid-template-columns:1.2fr 0.8fr; gap:48px; align-items:center; }
+.page-hero h1{ color:#fff; font-size:clamp(1.9rem, 3.6vw, 2.9rem); }
+.page-hero__lead{ color:rgba(255,255,255,0.82); font-size:1.15rem; margin-bottom:28px; }
+.page-hero__figure img{ width:100%; height:auto; max-height:360px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:0 24px 50px rgba(0,0,0,0.3); }
+
+.prose-layout{ display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:56px; align-items:start; }
+.prose h2{ margin-top:2em; }
+.prose h2:first-child{ margin-top:0; }
+.prose p{ max-width:70ch; }
+
+.check-list{ list-style:none; margin:0 0 1.2em; padding:0; display:grid; gap:10px; }
+.check-list li{ display:flex; gap:12px; align-items:flex-start; color:var(--ink); }
+.check-list svg{ width:20px; height:20px; flex:none; margin-top:2px; color:var(--navy-600); }
+
+.faq{ display:grid; gap:10px; }
+.faq__item{ border:1px solid var(--line-strong); border-radius:var(--radius-sm); background:#fff; }
+.faq__item summary{ cursor:pointer; padding:16px 18px; font-weight:600; color:var(--navy-800); list-style:none; }
+.faq__item summary::-webkit-details-marker{ display:none; }
+.faq__item summary::after{ content:"+"; float:right; font-size:1.3rem; line-height:1; color:var(--navy-600); }
+.faq__item[open] summary::after{ content:"\2212"; }
+.faq__item p{ padding:0 18px 16px; margin:0; }
+
+.side{ position:sticky; top:96px; display:grid; gap:20px; }
+.side__card{ border:1px solid var(--line); border-radius:var(--radius-md); padding:24px; background:var(--off); }
+.side__card h3{ margin-bottom:12px; }
+.side__card--cta{ background:var(--navy-800); border-color:var(--navy-800); }
+.side__card--cta h3{ color:#fff; }
+.side__card--cta p{ color:rgba(255,255,255,0.78); }
+.side__card--cta .btn{ width:100%; justify-content:center; margin-top:10px; }
+.btn-outline-light{ background:transparent; border-color:rgba(255,255,255,0.45); color:#fff; }
+.btn-outline-light:hover{ background:rgba(255,255,255,0.12); }
+.side__list{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+.side__list a{ color:var(--navy-700); font-weight:500; }
+.side__list a:hover{ text-decoration:underline; }
+
+.leist-cta{ background:var(--sky-100) !important; background-image:none !important; padding:64px 0; }
+.leist-cta__inner{ display:flex; gap:40px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.leist-cta h2{ margin-bottom:10px; }
+.leist-cta__contact{ display:grid; gap:6px; color:var(--ink-soft); }
+.leist-cta__contact strong{ color:var(--navy-800); }
+.leist-cta__contact a:not(.btn){ color:var(--navy-700); text-decoration:underline; }
+.leist-cta__contact .btn{ margin-top:10px; background:var(--navy-700); color:#fff; }
+.leist-cta__contact .btn:hover{ background:var(--navy-800); }
+
+@media (max-width:960px){
+  .page-hero__inner, .prose-layout{ grid-template-columns:minmax(0,1fr); gap:36px; }
+  .side{ position:static; }
+}
+@media (max-width:560px){
+  .page-hero{ padding:44px 0 52px; }
+}
+.page-hero .btn, .leist-cta .btn{ white-space:normal; text-align:left; }
