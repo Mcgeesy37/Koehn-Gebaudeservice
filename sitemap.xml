@@ -1,18 +1,13 @@
+map · XML
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.koehn-gebaeudeservice.de/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.koehn-gebaeudeservice.de/impressum.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.koehn-gebaeudeservice.de/datenschutz.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/privat-gewerbereinigung-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/fenster-glasreinigung-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/grund-bauendreinigung-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/garten-gruenpflege-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/sonder-aussenflaechenreinigung-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/dachrinnenreinigung-berlin.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/impressum.html</loc><priority>0.2</priority></url>
+  <url><loc>https://www.koehn-gebaeudeservice.de/datenschutz.html</loc><priority>0.2</priority></url>
 </urlset>
