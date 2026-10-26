@@ -960,3 +960,14 @@ a:focus-visible, button:focus-visible{
   .lightbox__arrow--next{ left:calc(50% + 10px); }
   .lightbox__figure img{ max-height:70vh; }
 }
+
+/* Leistungs-Kacheln: ganze Kachel anklickbar */
+.service{ position:relative; transition:background-color 0.25s, box-shadow 0.25s, transform 0.25s; }
+.service h3 a{ color:inherit; text-decoration:none; }
+.service h3 a::after{ content:""; position:absolute; inset:0; z-index:1; }
+.service::before{ content:"\2192"; position:absolute; top:18px; right:18px; width:34px; height:34px; border-radius:50%; display:grid; place-items:center; background:var(--sky-100); color:var(--navy-700); font-size:1rem; line-height:1; transition:background-color 0.25s, color 0.25s, transform 0.25s; }
+.service:hover{ background:var(--off); box-shadow:0 10px 30px rgba(10,31,58,0.10); }
+.service:hover::before{ background:var(--navy-700); color:#fff; transform:translateX(3px); }
+.service:hover h3 a{ color:var(--navy-600); }
+.service:has(a:focus-visible){ outline:2px solid var(--navy-600); outline-offset:3px; }
+.service h3 a:focus-visible{ outline:none; }
